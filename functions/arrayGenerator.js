@@ -2,7 +2,8 @@ const validator = require('./validation');
 
 class ArrayGenerator {
   constructor() {}
-  fizzbuzz(numbers) {
+  fizzbuzz() {
+    const numbers = [];
     let position;
     for (position = 0; position <= 100; position++) {
       const validation = new validator();

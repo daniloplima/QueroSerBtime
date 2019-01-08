@@ -1,8 +1,9 @@
 const arrayGenerator = require('./functions/arrayGenerator');
 
-const numbers = [];
-
 const arrayGeneration = new arrayGenerator();
-const fizzbuzzResult = arrayGeneration.fizzbuzz(numbers);
+const fizzbuzzResult = arrayGeneration.fizzbuzz();
 
-console.log(fizzbuzzResult);
+let beginning = 1;
+for (beginning; beginning <= 100; beginning++) {
+  console.log(fizzbuzzResult[beginning]);
+}
