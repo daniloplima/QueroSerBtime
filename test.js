@@ -3,7 +3,7 @@ const { fizzBuzzListing } = require('./index');
 
 describe('Testando o desafio', function() {
   this.timeout(Infinity);
-  it('Deve mostrar o vetor gerado de acordo, conforme dito o desafio listando números de 1 a 100', async () => {
+  it('Deve conter um vetor gerado de acordo, conforme dito o desafio listando números de 1 a 100', async () => {
     const expected = [
       1,
       2,
@@ -107,6 +107,7 @@ describe('Testando o desafio', function() {
       'Buzz',
     ];
     const result = await fizzBuzzListing();
+    console.log(result);
     assert.deepEqual(result, expected);
   });
 });
