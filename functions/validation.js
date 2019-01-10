@@ -1,18 +1,13 @@
 class Validator {
-  constructor() {}
   divisibleByThree(position) {
-    if (position % 3 === 0) {
-      return true;
-    } else {
-      return false;
-    }
+    if (position % 3 === 0) return true;
+
+    return false;
   }
   divisibleByFive(position) {
-    if (position % 5 === 0) {
-      return true;
-    } else {
-      return false;
-    }
+    if (position % 5 === 0) return true;
+
+    return false;
   }
 }
 
